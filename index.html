@@ -2,26 +2,45 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=900, initial-scale=1.0" />
+  <!-- FORCE DESKTOP VIEWPORT -->
+  <meta name="viewport" content="width=1200, initial-scale=1.0" />
   <title>Cuenta regresiva</title>
+
   <style>
     body {
       margin: 0;
       padding: 0;
+      background: white;
       display: flex;
       justify-content: center;
       align-items: center;
-      background: white;
+      height: 100vh;
+    }
+
+    /* Wrapper that forces desktop width */
+    .wrapper {
+      width: 1200px;
+      display: flex;
+      justify-content: center;
+    }
+
+    /* Scale down visually so it fits nicely */
+    .scale {
+      transform: scale(0.75);
+      transform-origin: center;
     }
   </style>
 </head>
+
 <body>
-
-<iframe
-  src="https://countdownshare.com/embed/c/B1TDoZbV5p"
-  style="border:none;width:900px;height:220px;"
-  loading="lazy">
-</iframe>
-
+  <div class="wrapper">
+    <div class="scale">
+      <iframe
+        src="https://countdownshare.com/embed/c/B1TDoZbV5p"
+        style="border:none;width:1200px;height:260px;"
+        loading="lazy">
+      </iframe>
+    </div>
+  </div>
 </body>
 </html>
